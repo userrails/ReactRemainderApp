@@ -9,6 +9,10 @@ Copy maxcdn ... bootstrap.min.css on index.html file
 
 Remove src/
 Create src/index.js
-Create src/components/app.jsx
-
+Create src/components/App.jsx
+Create src/App.css
+Create src/constants.js
+Create src/actions/
+Create src/actions/index/
+Create src/actions/index.js
 
