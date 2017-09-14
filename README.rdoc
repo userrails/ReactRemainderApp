@@ -7,6 +7,8 @@ npm start
 Visit: https://react-bootstrap.github.io/getting-started.html
 Copy maxcdn ... bootstrap.min.css on index.html file
 
-
+Remove src/
+Create src/index.js
+Create src/components/app.jsx
 
 
