@@ -2,6 +2,17 @@ import React, { Component } from 'react';
 import '../App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ''
+    }
+  }
+
+  addRemainder() {
+    console.log('this.state', this.state);
+  }
+
   render() {
     return (
       <div className="App">
@@ -10,9 +21,14 @@ class App extends Component {
         </div>
         <div className="form-inline">
           <div className="form-group">
-            <input className="form-control" placeholder="Enter ToDo ..." />
+            <input className="form-control"
+                   placeholder="Enter ToDo ..."
+                   onChange={event => this.setState({text: event.target.value})} />
           </div>
-          <button type="button" className="btn btn-success">Add Remainder</button>
+          <button type="button"
+                   className="btn btn-success"
+                   onClick={() => this.addReminder()}
+                   >Add Reminder</button>
         </div>
       </div>
     )
