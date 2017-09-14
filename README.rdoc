@@ -29,3 +29,6 @@ import { createStore } from 'redux';
 also create constant of store
 const store = createStore();
 
+call this store obj on Provider tag
+
+Next step is to create reducers dir under src
