@@ -1,0 +1,5 @@
+create-react-app remainderapp
+
+npm install redux react-redux --save
+
+npm start
