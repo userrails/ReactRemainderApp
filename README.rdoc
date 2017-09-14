@@ -16,3 +16,11 @@ Create src/actions/
 Create src/actions/index/
 Create src/actions/index.js
 
+now setup redux application, initialize the actual store
+import { Provider } from 'react-redux'
+Add above on src/index.js
+
+
+
+
+
