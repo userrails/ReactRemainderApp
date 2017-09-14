@@ -3,3 +3,10 @@ create-react-app remainderapp
 npm install redux react-redux --save
 
 npm start
+
+Visit: https://react-bootstrap.github.io/getting-started.html
+Copy maxcdn ... bootstrap.min.css on index.html file
+
+
+
+
