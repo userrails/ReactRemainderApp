@@ -4,14 +4,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="title">
+        <div className="title text-primary">
           Remainder Application
         </div>
         <div className="form-inline">
           <div className="form-group">
             <input className="form-control" placeholder="Enter ToDo ..." />
           </div>
-          <button type="button" class="btn btn-success">Add Remainder</button>
+          <button type="button" className="btn btn-success">Add Remainder</button>
         </div>
       </div>
     )
@@ -19,5 +19,3 @@ class App extends Component {
 }
 
 export default App;
-
- 
