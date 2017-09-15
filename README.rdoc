@@ -63,3 +63,11 @@ How to delete reminders:
   deleteReminder(id)
   Hookup deleteReminder function on delete button
 - Finally we will create a reducer
+  Remove reminder from the list
+  import DELETE_REMINDER const on reducers/index.js
+  create case on switch statement of reminders
+  On reducers after importing const next you need to use removeById() and write logic to remove record from the arrary by filtering id
+  Call removeById(state, action.id); inside the switch case inside the reducers
+
+  - now modify deleteReminder(id) on App.jsx and add the code to refresh content/list
+  this.props.deleteReminder(id);
