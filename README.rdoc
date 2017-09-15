@@ -45,3 +45,8 @@ create constuctor, call event on button, make addReminder()
 We can call mapStateToProps() to connect() function as first parameter
 
 Create helper method on app.js renderReminders(). This method will return all the reminders added by users.
+
+We can create css file and call like this:
+Index.css on src/
+Add below code on src/Index.js
+import './Index.css';
