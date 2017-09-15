@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'; 
-import { addReminder, deleteReminder } from '../actions';
+import { addReminder, deleteReminder, clearReminders } from '../actions';
 import moment from 'moment';
 
 class App extends Component {
@@ -26,6 +26,10 @@ class App extends Component {
     console.log('this.props', this.props);
     this.props.deleteReminder(id);
   }
+
+  // clearReminders() {
+  //   this.props.clearReminders();
+  // }
 
   renderReminders() {
     const { reminders } = this.props;
@@ -78,6 +82,15 @@ class App extends Component {
                      >Add Reminder</button>
             </div>
 
+            <div class="form-group">
+              <div 
+                className="btn btn-danger"
+                onClick={() => this.props.clearReminders()}
+              >
+                Clear Reminders
+              </div>
+            </div>
+
           </div>  
         </div>
         
@@ -98,7 +111,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({addReminder, deleteReminder}, dispatch);
+  return bindActionCreators({addReminder, deleteReminder, clearReminders}, dispatch);
 }
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 

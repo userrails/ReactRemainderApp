@@ -128,3 +128,25 @@ let reminders = null;
 case ADD_REMINDER: and call it on DELETE_REMINDER
       reminders = [...state, reminder(action)];
       bake_cookie('reminders', reminders);
+
+clear all the reminders in one go
+-----------------------------------------
+Steps are again:
+1) go to constants file
+export const CLEAR_REMINDERS = 'CLEAR_REMINDERS';
+2) go to actions index.js
+import CLEAR_REMINDERS const here and export const clearReminders
+3) Now go to reducers, import CLEAR_REMINDERS first of all
+THEN create one more case i.e. case CLEAR_REMINDERS
+&& write down the code to make reminders arrary empty assign to bake_cookie and return it
+Next just create "Clear Reminders" jsx button 
+  <div class="form-group">
+    <div 
+      className="btn btn-danger"
+      onClick={() => this.props.clearReminders()}
+    >
+      Clear Reminders
+    </div>
+  </div>
+import clearReminders from './actions'
+include on mapDispatchToProps()
