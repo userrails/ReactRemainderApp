@@ -35,3 +35,5 @@ Next step is to create reducers dir under src
 
 Now you will get uncaught Error: Expected the reducer to be a function. To fix this error change src/index.js file
 import reducer from './reducers'; and pass reducer object as argument on createStore(reducer);
+
+Reducer, store and providers flow need to know first.
