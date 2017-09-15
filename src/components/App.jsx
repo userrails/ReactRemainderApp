@@ -38,23 +38,32 @@ class App extends Component {
   }
 
   render() {
-    console.log('this.props', this.props);
     return (
       <div className="App">
         <div className="title text-primary">
           Remainder Application
         </div>
-        <div className="form-inline">
-          <div className="form-group">
-            <input className="form-control"
-                   placeholder="Enter ToDo ..."
-                   onChange={event => this.setState({text: event.target.value})} />
-          </div>
+
+        <div class="row">
+          <div className="form-inline">
+            <div className="form-group">
+              <input className="form-control"
+                     placeholder="Enter ToDo ..."
+                     onChange={event => this.setState({text: event.target.value})} />
+            </div>
+            
+            <div class="form-group">
+              <button type="button"
+                     className="btn btn-success"
+                     onClick={() => this.addReminder()}
+                     >Add Reminder</button>
+            </div>
+          </div>  
+        </div>
+        
+
+        <div className="row">
           { this.renderReminders() }
-          <button type="button"
-                   className="btn btn-success"
-                   onClick={() => this.addReminder()}
-                   >Add Reminder</button>
         </div>
       </div>
     )
