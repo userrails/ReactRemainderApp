@@ -15,9 +15,8 @@ class App extends Component {
   // This tells redux is working now
   addReminder() {
     // console.log('this.state', this.state);
-    console.log('this', this);
+    // console.log('this', this);
     this.props.addReminder(this.state.text);
-
   }
 
   render() {
@@ -45,7 +44,6 @@ class App extends Component {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({addReminder}, dispatch);
 }
-
 export default connect(null, mapDispatchToProps)(App);
 
 // export default App;
