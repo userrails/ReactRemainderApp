@@ -85,3 +85,18 @@ class App extends Component {
     }
   }
 }
+
+go to addRemainder() action and add second parameter as dueDate
+
+go to reducers, reminder action/method add dueDate, you can do like this:
+const reminder = (action) => {
+  let {text, dueDate} = action;
+  return {
+    id: Math.random(),
+    text,
+    dueDate
+  }
+}
+
+now App.jsx call addReminder()
+this.props.addReminder(this.state.text, this.state.dueDate);
