@@ -110,3 +110,21 @@ now import moment on top of app.jsx file to use moment features
 Now add some moment logic inside renderReminders()
 <em>{moment(new Date(reminder.dueDate)).fromNow()}<em/>
 This format is like this: in 11 days
+
+Let us play with cookies now
+- install npm package sfcookies
+npm install sfcookies
+go to reducers index.js and import it
+import { bake_cookie, read_cookie } from 'sfcookies';
+
+Go to ADD_REMINDER section of swicth case and add bake_cookie so that browser remember the datas saved under cookies under reducers/index.js
+
+Also call the read_cookie
+
+let reminders = null;
+
+  state = read_cookie('reminders');
+
+case ADD_REMINDER: and call it on DELETE_REMINDER
+      reminders = [...state, reminder(action)];
+      bake_cookie('reminders', reminders);
