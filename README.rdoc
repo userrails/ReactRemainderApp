@@ -37,3 +37,6 @@ Now you will get uncaught Error: Expected the reducer to be a function. To fix t
 import reducer from './reducers'; and pass reducer object as argument on createStore(reducer);
 
 Reducer, store and providers flow need to know first.
+
+Now hookup action creater we made. 
+create constuctor, call event on button, make addReminder()
