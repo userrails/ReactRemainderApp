@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('this.props', this.props);
     return (
       <div className="App">
         <div className="title text-primary">
@@ -41,9 +42,16 @@ class App extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  console.log('state', state);
+  return {
+    reminders: state
+  }
+}
+
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({addReminder}, dispatch);
 }
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 
 // export default App;

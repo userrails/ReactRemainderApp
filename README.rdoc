@@ -40,3 +40,6 @@ Reducer, store and providers flow need to know first.
 
 Now hookup action creater we made. 
 create constuctor, call event on button, make addReminder()
+
+
+We can call mapStateToProps() to connect() function as first parameter
