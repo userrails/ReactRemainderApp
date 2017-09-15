@@ -3,7 +3,7 @@ import { ADD_REMINDER } from '../constants';
 const reminder = (action) => {
   return {
     text: action.text,
-    id: Math.round()
+    id: Math.random()
   }
 }
 
