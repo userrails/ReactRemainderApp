@@ -65,6 +65,7 @@ class App extends Component {
             
               <input className="form-control"
                      type="datetime-local"
+                     onChange={event => this.setState({dueDate: event.target.value})} />
             </div>
             
             <div class="form-group">
