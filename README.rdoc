@@ -53,3 +53,13 @@ import './Index.css';
 
 How to delete reminders:
 -------------------------
+- Add button x
+- Add constant   export const DELETE_REMINDER = 'DELETE_REMINDER';
+- We make action creator under actions/index.js
+- go to component, components/App.jsx
+  > import Delete_reminder constant
+  import { addReminder, deleteReminder } from '../actions';
+  create helper method deleteReminder
+  deleteReminder(id)
+  Hookup deleteReminder function on delete button
+- Finally we will create a reducer
