@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
+// import {connect} from 'react-redux';
+// import { addReminder } 
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +11,7 @@ class App extends Component {
     }
   }
 
-  addRemainder() {
+  addReminder() {
     console.log('this.state', this.state);
   }
 
