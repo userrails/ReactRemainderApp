@@ -62,6 +62,9 @@ class App extends Component {
               <input className="form-control"
                      placeholder="Enter ToDo ..."
                      onChange={event => this.setState({text: event.target.value})} />
+            
+              <input className="form-control"
+                     type="datetime-local"
             </div>
             
             <div class="form-group">

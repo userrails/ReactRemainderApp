@@ -71,3 +71,17 @@ How to delete reminders:
 
   - now modify deleteReminder(id) on App.jsx and add the code to refresh content/list
   this.props.deleteReminder(id);
+
+Add calender viewer
+<input className="form-control"
+                     type="datetime-local"
+                     onChange={event => this.setState({dueDate: event.target.value})}
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: '',
+      dueDate: '' // make it empty string for now and is set on setState on input field onChange() event
+    }
+  }
+}
