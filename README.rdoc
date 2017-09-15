@@ -100,3 +100,5 @@ const reminder = (action) => {
 
 now App.jsx call addReminder()
 this.props.addReminder(this.state.text, this.state.dueDate);
+
+Include the data dueDate on user interface
