@@ -50,3 +50,6 @@ We can create css file and call like this:
 Index.css on src/
 Add below code on src/Index.js
 import './Index.css';
+
+How to delete reminders:
+-------------------------
