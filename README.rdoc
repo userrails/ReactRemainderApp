@@ -102,3 +102,11 @@ now App.jsx call addReminder()
 this.props.addReminder(this.state.text, this.state.dueDate);
 
 Include the data dueDate on user interface
+
+moment js is used to validate, manipulate, parse, and display the date string
+npm install moment --save
+moment@2.18.1 node_modules/moment
+now import moment on top of app.jsx file to use moment features
+Now add some moment logic inside renderReminders()
+<em>{moment(new Date(reminder.dueDate)).fromNow()}<em/>
+This format is like this: in 11 days
